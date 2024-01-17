@@ -62,7 +62,7 @@ const user = {
     },
     sayUserNameArrow() {
         setTimeout(() => {
-            console.log("Username: " + this.name);
+            console.log("Username: " + this.name); // irá referenciar o atributo do objeto user
         }, 500)
     }
 }
