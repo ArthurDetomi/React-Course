@@ -1,5 +1,8 @@
-import './App.css';
+// Componentes
+import ManageData from "./components/ManageData"
 
+// Styles and images
+import './App.css';
 import City from "./assets/city.jpg"
 
 function App() {
@@ -16,6 +19,7 @@ function App() {
         <img src={City} alt="Cidade" />
       </div>
 
+      <ManageData/>
     </div>
   );
 }
