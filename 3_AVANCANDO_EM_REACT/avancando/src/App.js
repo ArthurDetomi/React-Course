@@ -1,6 +1,7 @@
 // Componentes
 import ManageData from "./components/ManageData"
 import ListRender from "./components/ListRender"
+import ConditionalRender from "./components/ConditionalRender"
 
 // Styles and images
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
 
       <ManageData/>
       <ListRender/>
+      <ConditionalRender/>
     </div>
   );
 }
