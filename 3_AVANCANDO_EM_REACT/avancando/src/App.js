@@ -1,5 +1,6 @@
 // Componentes
 import ManageData from "./components/ManageData"
+import ListRender from "./components/ListRender"
 
 // Styles and images
 import './App.css';
@@ -20,6 +21,7 @@ function App() {
       </div>
 
       <ManageData/>
+      <ListRender/>
     </div>
   );
 }
