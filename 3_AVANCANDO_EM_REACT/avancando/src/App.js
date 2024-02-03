@@ -4,6 +4,8 @@ import ListRender from "./components/ListRender"
 import ConditionalRender from "./components/ConditionalRender"
 import ShowUserName from "./components/ShowUserName"
 import CarDetails from "./components/CarDetails"
+import Fragment from "./components/Fragment"
+
 import { useState } from "react"
 
 // Styles and images
@@ -11,8 +13,6 @@ import './App.css';
 import City from "./assets/city.jpg"
 
 function App() {
-  const name = "Joaquin"
-
   const [userName] = useState("Maria");
 
   const cars = [
@@ -50,6 +50,8 @@ function App() {
           <CarDetails  brand={car.brand} color={car.color} km={car.km} newCar={car.newCar} />
         ))
       }
+      {/* Fragment */}
+      <Fragment propFragment="Teste"/>
     </div>
   );
 }
