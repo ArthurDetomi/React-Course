@@ -9,6 +9,7 @@ import Container from "./components/Container"
 import ExecuteFunction from "./components/ExecuteFunction"
 import Message from "./components/Message"
 import ChangeMessageState from "./components/ChangeMessageState"
+import UserDetails from "./components/UserDetails"
 
 import { useState } from "react"
 
@@ -24,6 +25,12 @@ function App() {
     { id: 2, brand: "Kia", color: "Branco", newCar: false, km: 0 },
     { id: 3, brand: "Renault", color: "Azul", newCar: true, km: 0 }
   ];
+
+  const users = [
+    { id: 1, name: "Arthur", age: 22, gender: 'M', job: "Programador" },
+    { id: 2, name: "Ines", age: 23, gender: 'F', job: "Dentista" },
+    { id: 3, name: "Joãozinho Kid", age: 12, gender: 'M', job: "Estudante" }
+  ]
 
   function showMessage() {
     console.log("Evento do componente pai!");
@@ -73,8 +80,19 @@ function App() {
       {/* Executar função */}
       <ExecuteFunction myFunction={showMessage} />
       {/* State lift */}
-      <Message msg={message}/>
+      <Message msg={message} />
       <ChangeMessageState handleMessage={handleMessage} />
+      {/* Desafio */}
+      {
+        users.map((user) =>
+          <UserDetails key={user.id}
+            name={user.name}
+            age={user.age}
+            gender={user.gender}
+            job={user.job}
+          />
+        )
+      }
     </div>
   );
 }
