@@ -3,6 +3,8 @@ import ManageData from "./components/ManageData"
 import ListRender from "./components/ListRender"
 import ConditionalRender from "./components/ConditionalRender"
 import ShowUserName from "./components/ShowUserName"
+import CarDetails from "./components/CarDetails"
+import { useState } from "react"
 
 // Styles and images
 import './App.css';
@@ -29,7 +31,10 @@ function App() {
       <ManageData/>
       <ListRender/>
       <ConditionalRender/>
+      {/* props */}
       <ShowUserName name={userName} />
+      {/* destructuring properties */}
+      <CarDetails  brand="VW" km={100000} color="Azul" />
     </div>
   );
 }
