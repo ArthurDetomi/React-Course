@@ -85,7 +85,8 @@ function App() {
       {/* Desafio */}
       {
         users.map((user) =>
-          <UserDetails key={user.id}
+          <UserDetails
+            key={user.id}
             name={user.name}
             age={user.age}
             gender={user.gender}
