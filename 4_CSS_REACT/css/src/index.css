@@ -9,3 +9,13 @@ h1 {
     color: rgb(66, 66, 224);
 }
 
+.red-title {
+    background-color: #000;
+    color: red;
+    border: 5px solid green;
+}
+
+.title {
+    background-color: #000;
+    color: #FFF;
+}
