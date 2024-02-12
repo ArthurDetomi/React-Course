@@ -1,19 +1,39 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Camisa",
-        "price": 59.9
-      },
-      {
-        "id": 2,
-        "name": "Calça vermelha",
-        "price": 90
-      },
-      {
-        "id": 3,
-        "name": "Boné aba reta",
-        "price": 29.9
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "feb4",
+      "name": "teste",
+      "price": "12"
+    },
+    {
+      "id": "d3a6",
+      "name": "teste",
+      "price": "12"
+    },
+    {
+      "id": "9df3",
+      "name": "Escova de dente",
+      "price": "2.50"
+    },
+    {
+      "id": "a607",
+      "name": "teclado",
+      "price": "110"
+    }
+  ]
+}
