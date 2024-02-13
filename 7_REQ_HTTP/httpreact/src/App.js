@@ -13,7 +13,7 @@ function App() {
   const [price, setPrice] = useState("");
 
   // 4 - customHook
-  const { data: items, httpConfig } = useFetch(URL);
+  const { data: items, httpConfig, loading } = useFetch(URL);
 
   /* 1- resgatando dados com uma chamada assincrona
   useEffect(() => {
@@ -50,7 +50,7 @@ function App() {
 
     setProducts((prevProducts) => [...prevProducts, addedProduct])
     */
-    
+
     // refatorando Post
     httpConfig(product, "POST");
 
@@ -61,15 +61,19 @@ function App() {
   return (
     <div className="App">
       <h1>Lista de produtos</h1>
-      <ul>
-        { items &&
-          items.map(
-            (product) => (
-              <li key={product.id}>{product.name} - R$ {product.price}</li>
+      {/* 6 - loading */}
+      {loading && <p>Carregando dados...</p>}
+      {!loading && (
+        <ul>
+          {items &&
+            items.map(
+              (product) => (
+                <li key={product.id}>{product.name} - R$ {product.price}</li>
+              )
             )
-          )
-        }
-      </ul>
+          }
+        </ul>
+      )}
       <div className="add-product">
         <form onSubmit={handleSubmit}>
           <label>
