@@ -58,6 +58,11 @@ function App() {
     setPrice("");
   }
 
+  // 8 - desafio 6
+  const handleDelete = (id) => {
+    httpConfig(id, "DELETE");
+  }
+
   return (
     <div className="App">
       <h1>Lista de produtos</h1>
@@ -69,7 +74,10 @@ function App() {
           {items &&
             items.map(
               (product) => (
-                <li key={product.id}>{product.name} - R$ {product.price}</li>
+                <li key={product.id} >
+                  {product.name} - R$ {product.price}
+                  <button onClick={() => handleDelete(product.id)}>Deletar</button>
+                </li>
               )
             )
           }

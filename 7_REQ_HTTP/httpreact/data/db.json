@@ -16,11 +16,6 @@
       "price": 29.9
     },
     {
-      "id": "feb4",
-      "name": "teste",
-      "price": "12"
-    },
-    {
       "id": "d3a6",
       "name": "teste",
       "price": "12"
@@ -39,31 +34,6 @@
       "id": "5725",
       "name": "mouse",
       "price": "60"
-    },
-    {
-      "id": "d93c",
-      "name": "mouse",
-      "price": "120"
-    },
-    {
-      "id": "be85",
-      "name": "mouse",
-      "price": "120"
-    },
-    {
-      "id": "7c98",
-      "name": "Geraldo Arthur",
-      "price": "1000000000"
-    },
-    {
-      "id": "9d77",
-      "name": "Escova de dente",
-      "price": "2"
-    },
-    {
-      "id": "0bc5",
-      "name": "Escova de dente",
-      "price": "2"
     },
     {
       "id": "d89d",
