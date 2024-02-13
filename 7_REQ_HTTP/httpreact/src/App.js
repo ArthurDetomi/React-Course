@@ -13,7 +13,7 @@ function App() {
   const [price, setPrice] = useState("");
 
   // 4 - customHook
-  const { data: items, httpConfig, loading } = useFetch(URL);
+  const { data: items, httpConfig, loading, error } = useFetch(URL);
 
   /* 1- resgatando dados com uma chamada assincrona
   useEffect(() => {
@@ -63,7 +63,8 @@ function App() {
       <h1>Lista de produtos</h1>
       {/* 6 - loading */}
       {loading && <p>Carregando dados...</p>}
-      {!loading && (
+      {error && <p>{error}</p>}
+      {!error && (
         <ul>
           {items &&
             items.map(
@@ -84,7 +85,11 @@ function App() {
             Preço:
             <input type="number" value={price} name="price" onChange={(e) => setPrice(e.target.value)} />
           </label>
-          <input type="submit" value="Criar produto" />
+          {/* 7 - state de loading no post */}
+          {loading && <input type="submit" disabled value="Aguarde" />}
+          {!loading &&
+            <input type="submit" value="Criar produto" />
+          }
         </form>
       </div>
     </div>
