@@ -1,0 +1,49 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Camisa",
+        "price": 59.9
+      },
+      {
+        "id": "2",
+        "name": "Calça vermelha",
+        "price": 90
+      },
+      {
+        "id": "3",
+        "name": "Boné aba reta",
+        "price": 29.9
+      },
+      {
+        "id": "d3a6",
+        "name": "teste",
+        "price": "12"
+      },
+      {
+        "id": "9df3",
+        "name": "Escova de dente",
+        "price": "2.50"
+      },
+      {
+        "id": "a607",
+        "name": "teclado",
+        "price": "110"
+      },
+      {
+        "id": "5725",
+        "name": "mouse",
+        "price": "60"
+      },
+      {
+        "id": "d89d",
+        "name": "Escova de dente",
+        "price": "2"
+      },
+      {
+        "id": "be45",
+        "name": "macarrao",
+        "price": "1.20"
+      }
+    ]
+  }

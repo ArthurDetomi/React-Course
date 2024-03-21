@@ -112,7 +112,7 @@ function App() {
     }
   }, [guesses]);
 
-  // Checa condição de vitória
+  // Checa condição de vitória, ou seja, completou uma palavra
   useEffect(() => {
     const uniqueLetters = [...new Set(letters)]
 
